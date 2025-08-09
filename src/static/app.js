@@ -17,12 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
       Object.entries(activities).forEach(([name, details]) => {
         const activityCard = document.createElement("div");
         activityCard.className = "activity-card";
-        activityCard.style.border = "1px solid #ccc";
-        activityCard.style.borderRadius = "8px";
-        activityCard.style.padding = "16px";
-        activityCard.style.marginBottom = "20px";
-        activityCard.style.background = "#f9f9ff";
-        activityCard.style.boxShadow = "0 2px 8px rgba(0,0,0,0.04)";
 
         const spotsLeft = details.max_participants - details.participants.length;
 
